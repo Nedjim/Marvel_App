@@ -11,6 +11,7 @@
 ## 2 - Installation des packages
 ```
 $ yarn install
+$ yarn build
 ```
 
 ## 3 - Exécution

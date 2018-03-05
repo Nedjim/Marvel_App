@@ -16,7 +16,7 @@ export default class GetDetails extends React.Component {
   }
 
   getCharacterDetails() {
-    return this.state.data.filter((e) => e.id == this.state.id)[0]
+    return this.state.data.filter(e => e.id == this.state.id)[0]
   }
 
   initCurrentCharacter() {
