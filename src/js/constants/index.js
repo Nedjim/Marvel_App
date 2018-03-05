@@ -1,0 +1,7 @@
+export default {
+  GET_DATA: 'GET_DATA',
+  GET_DETAILS: 'GET_DETAILS',
+  GET_COMICS: 'GET_COMICS',
+  GET_SERIES: 'GET_SERIES',
+  CHANGE_EVENT: 'change',
+}
