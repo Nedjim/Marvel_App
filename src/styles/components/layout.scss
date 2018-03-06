@@ -1,0 +1,54 @@
+header {
+  padding: 1rem;
+  h1 {
+    text-align: center
+  }
+}
+
+.content {
+  padding: 2rem
+}
+
+#details {
+  h2 {
+    font-size: 1.4rem;
+  }
+  img, .presentation {
+    display: inline-block;
+  }
+  img {
+    width: 10rem;
+  }
+  .presentation {
+    width: 60%
+  }
+}
+.list {
+  text-align: center;
+  .box-list {
+    text-align: center;
+    display: inline-block;
+    padding: 1rem;
+    margin: 0.4rem;
+    .container-img {
+      position: relative;
+      .box-img {
+        display: block;
+        width: 250px;
+        height: 200px;
+      }
+      .details-button {
+        position: absolute;
+        bottom: 3rem;
+        height: 2.5rem;
+        width: 100%;
+        button {
+          margin-top: 0.5rem;
+        }
+     }
+    }
+    .list-name {
+      margin: 0.5rem;
+    }
+  }
+}

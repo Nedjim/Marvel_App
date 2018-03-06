@@ -1,0 +1,14 @@
+.overlay {
+  visibility: hidden;
+}
+
+.box-list:hover {
+  .box-img {
+    transition: 1s;
+    @include filter(0.7);
+  }
+  .overlay {
+    visibility: visible;
+    transition: 1s;
+  }
+}

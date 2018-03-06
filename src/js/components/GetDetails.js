@@ -10,7 +10,6 @@ export default class GetDetails extends React.Component {
     this.state = {
       data: AppStore.data,
       id: AppStore.currentCharacter,
-      query: AppStore.query,
     }
     this.initCurrentCharacter = this.initCurrentCharacter.bind(this)
   }
@@ -30,11 +29,11 @@ export default class GetDetails extends React.Component {
     const details = this.getCharacterDetails()
 
     return (
-      <div>
+      <div id="details" className="content">
         <Link to="/" >
-          <button onClick={this.initCurrentCharacter}>Liste des personnages</button>
+          <button onClick={this.initCurrentCharacter}>Retourner à la liste des personnages</button>
         </Link>
-        <Details details={details} query={this.state.query} />
+        <Details details={details} />
       </div>
     )
   }

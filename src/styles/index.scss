@@ -1,14 +1,7 @@
-html {
-  font-size: 16px
-}
-body {
-  background: #E8EAF6
-}
-
-.box-image {
-  display: inline-block;
-  margin-left: 0.2rem;
-  img {
-    width: 10rem
-  }
-}
+@import 'import/_reset.scss';
+@import 'import/_variables.scss';
+@import 'import/_mixins.scss';
+@import 'components/base.scss';
+@import 'components/layout.scss';
+@import 'components/theme.scss';
+@import 'components/module.scss';

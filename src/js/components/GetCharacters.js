@@ -29,7 +29,7 @@ export default class GetCharacters extends React.Component {
   render() {
     if (this.state.data !== undefined) {
       return (
-        <div>
+        <div className="content">
           {<List />}
         </div>
       )

@@ -15,6 +15,8 @@ export default class Details extends React.Component {
       id: AppStore.currentCharacter,
       comics: AppStore.comics,
       series: AppStore.series,
+      path: props.details.thumbnail.path,
+      extension: props.details.thumbnail.extension,
     }
   }
 
@@ -40,9 +42,13 @@ export default class Details extends React.Component {
     return (
       <div>
         <h2>Fiche d'identité</h2>
-
-        <div className="presentation">{ this.state.name }</div>
-        <div className="description">{ this.state.description }</div>
+        <div>
+          <img src={`${this.state.path}.${this.state.extension}`} alt={this.state.name} />
+          <div className="presentation">
+            <div className="presentation">{ this.state.name }</div>
+            <div className="description">{ this.state.description }</div>
+          </div>
+        </div>
         <DetailsList comics={this.state.comics} series={this.state.series} />
       </div>
     )

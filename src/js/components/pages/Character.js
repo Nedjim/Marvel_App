@@ -11,13 +11,21 @@ const Character = (props) => {
     Actions.getDetails(id)
   }
 
+  const imgStyle = {
+    backgroundImage: `url("${path}.${extension}")`,
+  }
+
   return (
-    <div className="box-image">
-      <img src={`${path}.${extension}`} alt="test" />
-      <div>{ name }</div>
-      <Link to={`/details/${name}`} >
-        <button onClick={getDetails} data-id={id}>Details</button>
-      </Link>
+    <div className="box-list">
+      <div className="container-img">
+        <div className="box-img" style={imgStyle} alt={name} />
+        <div className="details-button overlay">
+          <Link to={`/details/${name}`} >
+            <button onClick={getDetails} data-id={id}>Details</button>
+          </Link>
+        </div>
+      </div>
+      <div className="list-name">{ name }</div>
     </div>
   )
 }
